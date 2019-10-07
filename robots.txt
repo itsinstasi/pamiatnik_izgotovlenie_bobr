@@ -1,0 +1,2 @@
+﻿User-agent: *
+Sitemap: http://pamiatnik-izgotovlenie-bobr.itsinsta.site//sitemap.xml
