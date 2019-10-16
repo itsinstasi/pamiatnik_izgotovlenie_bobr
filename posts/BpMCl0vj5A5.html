@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="pamiatnik_izgotovlenie_bobr" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -88,25 +91,50 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/4cc87d19f135815d0a29fa5d42696d43/5E32008F/t51.2885-15/e35/43818026_386409825230583_1033068378913730766_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/916bbab7dba5c6c002489e90544b1a2b/5E2AF965/t51.2885-15/e35/43817841_265602510762072_5881758637601104857_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/e79eb98e868ca067c837ff874652b7cb/5E235B1F/t51.2885-15/e35/42661445_2161390567518935_3925200184206860180_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/8cd58bc93523d21f1345d95be7582e3a/5E631308/t51.2885-15/e35/43628362_452886941785547_4091050107982478734_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/1ad94e42ab53dfca1f134e9f06e2d05b/5E63901A/t51.2885-15/e35/43608723_1108750785959666_7013183334317366607_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/73158a9f27f7317f62a65b3270fd3d65/5E279A8E/t51.2885-15/e35/44221473_1393337817465783_2973074546985208098_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/34b9bab11486550b2606e2d84b1e4cd1/5E329065/t51.2885-15/e35/43516989_465010427353986_3624891957139888971_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/dd7c7dd87205d631fbedb7051f499039/5E1E5745/t51.2885-15/e35/44191006_194754564666755_689674249488908752_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/12856931bbe19889559a6f448f94f290/5E1A94E1/t51.2885-15/e35/43779006_2206917882879313_3667415234752139097_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/6898c5c5e67600072a300a8ac5568fda/5E237FFC/t51.2885-15/e35/43984929_2186224098118615_5596069989072029024_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/4cc87d19f135815d0a29fa5d42696d43/5E32008F/t51.2885-15/e35/43818026_386409825230583_1033068378913730766_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/916bbab7dba5c6c002489e90544b1a2b/5E2AF965/t51.2885-15/e35/43817841_265602510762072_5881758637601104857_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/e79eb98e868ca067c837ff874652b7cb/5E235B1F/t51.2885-15/e35/42661445_2161390567518935_3925200184206860180_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/8cd58bc93523d21f1345d95be7582e3a/5E631308/t51.2885-15/e35/43628362_452886941785547_4091050107982478734_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/1ad94e42ab53dfca1f134e9f06e2d05b/5E63901A/t51.2885-15/e35/43608723_1108750785959666_7013183334317366607_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/73158a9f27f7317f62a65b3270fd3d65/5E279A8E/t51.2885-15/e35/44221473_1393337817465783_2973074546985208098_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/34b9bab11486550b2606e2d84b1e4cd1/5E329065/t51.2885-15/e35/43516989_465010427353986_3624891957139888971_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/dd7c7dd87205d631fbedb7051f499039/5E1E5745/t51.2885-15/e35/44191006_194754564666755_689674249488908752_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/cf87e41c2acaaca068b137cde6b236f6/5E4221E1/t51.2885-15/e35/43779006_2206917882879313_3667415234752139097_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/6898c5c5e67600072a300a8ac5568fda/5E237FFC/t51.2885-15/e35/43984929_2186224098118615_5596069989072029024_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p></p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BpMCl0vj5A5/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -195,11 +223,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->

@@ -30,11 +30,11 @@
     <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
     
-    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/3683749e266946b87fd80e2802e7967c/5E1AC37A/t51.2885-15/e35/72256192_936530050043439_327639485390756185_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" />
+    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/469cd7e643036c991b76dbe699478a63/5E42507A/t51.2885-15/e35/72256192_936530050043439_327639485390756185_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" />
     <meta name="robots" content="INDEX, FOLLOW" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://pamiatnik-izgotovlenie-bobr.itsinsta.site//posts/B3RZdPvo9CV.html" />
-    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/3683749e266946b87fd80e2802e7967c/5E1AC37A/t51.2885-15/e35/72256192_936530050043439_327639485390756185_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" />
+    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/469cd7e643036c991b76dbe699478a63/5E42507A/t51.2885-15/e35/72256192_936530050043439_327639485390756185_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="960"/>
     <meta property="og:image:height" content="960"/>
@@ -42,6 +42,9 @@
     <meta property="og:description" content="" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="pamiatnik_izgotovlenie_bobr" />
+
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
 
 </head>
 <body>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -88,18 +91,29 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/3683749e266946b87fd80e2802e7967c/5E1AC37A/t51.2885-15/e35/72256192_936530050043439_327639485390756185_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/91bd6198f8a4be3af190d207084aaaaa/5E64BB6C/t51.2885-15/e35/70602000_471578896769712_7965198985653237974_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/6f1b47ebc67e95a8e0492246f62ebc31/5E1AD8A8/t51.2885-15/e35/71529110_180728609769859_691903274792282796_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/469cd7e643036c991b76dbe699478a63/5E42507A/t51.2885-15/e35/72256192_936530050043439_327639485390756185_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/91bd6198f8a4be3af190d207084aaaaa/5E64BB6C/t51.2885-15/e35/70602000_471578896769712_7965198985653237974_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/21b63e87643df77813fba7bdaef35867/5E4265A8/t51.2885-15/e35/71529110_180728609769859_691903274792282796_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p></p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/B3RZdPvo9CV/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -188,11 +202,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
